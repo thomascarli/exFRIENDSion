@@ -13,8 +13,22 @@ function set_body_styles() {
 }
 
 function set_image_container_styles(image_container) {
-  image_container.style.backgroundColor = 'red';
+  image_path = randomize_image();
+  image_container.style.backgroundImage = image_path;
+  image_container.style.opacity = "0.9";
   image_container.style.width = "100%";
   image_container.style.height = "100%";
   image_container.style.backgroundSize = "cover";
+}
+
+function randomize_image() {
+  var base_string = "url('images/friends_";
+  var random_int = getRandomInt(1,2).toString();
+  var result = base_string.concat(random_int).concat(".jpg')");
+  console.log(result);
+  return result;
+}
+
+function getRandomInt (min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 }
