@@ -29,9 +29,10 @@ function set_image_container_styles(image_container) {
 }
 
 function set_name_container(name_container) {
-  name_container.style.fontSize = "15px";
+  name_container.style.fontSize = "10px";
   name_container.style.color = "whitesmoke";
-  name_container.style.paddingRight = "200px";
+  name_container.style.paddingRight = "20px";
+  name_container.style.paddingBottom = "10px";
 }
 
 function set_episode_info_container(episode_info_container) {
