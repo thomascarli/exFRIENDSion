@@ -52,7 +52,7 @@ function set_bottom_container_styles(bottom_container) {
 
 function randomize_image() {
   var base_string = "url('images/friends_";
-  var random_int = getRandomInt(1,9).toString();
+  var random_int = getRandomInt(1,13).toString();
   var result = base_string.concat(random_int).concat(".jpg')");
   return result;
 }
